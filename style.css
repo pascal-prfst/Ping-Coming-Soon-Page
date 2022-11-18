@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    padding: 1.5rem;
+    font-family: "Libre Franklin", sans-serif;
+    display: grid;
+    place-content: center;
+}
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25rem;
+}
+
+.ping-logo {
+    width: 2.5rem;
+    margin-top: 3rem;
+}
+h1 {
+    margin: 1.5rem 0rem 1rem 0rem;
+    font-weight: 300;
+    color:hsl(0, 0%, 59%);
+    font-size: 1.1rem;
+}
+span {
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+.subscribe-paragraph {
+    color:hsl(209, 33%, 12%);
+    font-size: 0.6rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+form {
+    width: 100%;
+}
+input {
+    border: 1px solid hsl(223, 100%, 88%);
+    width: 90%;
+    padding: 0.6rem 0rem;
+    border-radius: 2rem;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    outline: none;
+    color:hsl(209, 33%, 12%);
+}
+input::placeholder {
+    color:hsl(223, 100%, 88%);
+}
+.error-msg {
+    color: hsl(354, 100%, 50%);
+    font-style: italic;
+    font-size: 0.5rem;
+}
+
+button {
+    width: 90%;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    padding: 0.6rem 0rem;
+    border-radius: 2rem;
+}
+button:hover {
+    cursor: pointer;
+    background-color: hsl(223, 87%, 70%);
+}
+
+.dashboard-img {
+    width: 100%;
+    margin: 3rem 0rem 6rem 0rem;
+}
+
+.icon-container {
+    color:hsl(223, 87%, 63%);
+    margin-bottom: 1rem;
+}
+ion-icon {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.copyright-paragraph {
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    font-size: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+    body {
+        padding: 0;
+        height: 100vh;
+    }
+    main {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .ping-logo {
+        width: 4rem;
+        margin-top: 1rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    .subscribe-paragraph {
+        font-size: 1rem;
+    }
+    form {
+        position: relative;
+    }
+    .error-msg {
+        position: absolute;
+        left: 2.2rem;
+        top: 3rem;
+    }
+    input {
+        padding: 1rem 0rem 1rem 1.5rem;
+        width: 65%;
+    }
+    button {
+        padding: 1rem 0rem;
+        width: 30%;
+    }
+    .dashboard-img {
+        margin-bottom: 3rem;
+    }
+}
