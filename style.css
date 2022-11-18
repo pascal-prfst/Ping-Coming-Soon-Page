@@ -110,7 +110,7 @@ ion-icon {
     }
     .ping-logo {
         width: 4rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     h1 {
         font-size: 2.5rem;
@@ -136,6 +136,6 @@ ion-icon {
         width: 30%;
     }
     .dashboard-img {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 }
